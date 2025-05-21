@@ -21,6 +21,9 @@
 
     yad # a fork of zenity, for creating dialogs
 
+    rofi # application launcher
+    ags # a rofi theme
+    
     # audio
     alsa-utils # provides amixer/alsamixer/...
     mpd # for playing system sounds

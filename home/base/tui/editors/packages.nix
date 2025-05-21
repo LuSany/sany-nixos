@@ -78,11 +78,13 @@
             # my commonly used python packages
             jupyter
             ipython
+            numpy
             pandas
             requests
             pyquery
             pyyaml
             boto3
+            uv
           ]
       ))
 

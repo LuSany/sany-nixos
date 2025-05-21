@@ -28,9 +28,9 @@
     # nixpaks.firefox-desktop-item
     code-cursor # an AI code editor
     # microsoft-edge
-    # wpsoffice-cn
-    # onlyoffice-documentserver
-    # onlyoffice-desktopeditors
+    wpsoffice-cn
+    onlyoffice-documentserver
+    onlyoffice-desktopeditors
   ];
 
   programs = {
@@ -128,6 +128,8 @@
           ms-windows-ai-studio.windows-ai-studio
           # saoudrizwan.claude-dev
           # snowords.open-any-url
+          github.vscode-pull-request-github
+          # wscats.cors-browser
         ];
     };
   };
