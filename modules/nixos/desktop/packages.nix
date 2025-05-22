@@ -8,5 +8,6 @@
   environment.systemPackages = with pkgs; [
     wl-clipboard
     grim
+    lmstudio
   ];
 }

@@ -60,7 +60,10 @@ in {
       source = ../conf/wlogout;
       recursive = true;
     };
-
+    "rofi" = {
+      source = ../conf/rofi;
+      recursive = true;
+    };
     # music player - mpd
     "mpd" = {
       source = ../conf/mpd;

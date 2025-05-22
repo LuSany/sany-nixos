@@ -26,4 +26,3 @@ done
 
 # Start mpd
 exec mpd &
-exec-once=fcitx5
