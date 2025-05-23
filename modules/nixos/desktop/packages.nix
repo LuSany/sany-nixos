@@ -9,5 +9,8 @@
     wl-clipboard
     grim
     lmstudio
+    cherry-studio
+    qqmusic
+    go-musicfox
   ];
 }

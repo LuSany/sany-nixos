@@ -17,10 +17,8 @@
   # boot.extraModprobeConfig = "options kvm_amd nested=1";  # for amd cpu
   #
   ## For Intel CPU, add "kvm-intel" to kernelModules.
-  # boot.kernelModules = ["kvm-intel"];
-  # boot.extraModprobeConfig = "options kvm_intel nested=1"; # for intel cpu
-
-  boot.kernelModules = ["vfio-pci"];
+  boot.kernelModules = ["kvm-intel" "vfio-pci"];
+  boot.extraModprobeConfig = "options kvm_intel nested=1"; # for intel cpu
 
   virtualisation = {
     docker = {
@@ -39,14 +37,15 @@
     # Usage: https://wiki.nixos.org/wiki/Waydroid
     # waydroid.enable = true;
 
-    # libvirtd = {
-    #   enable = true;
-    #   # hanging this option to false may cause file permission issues for existing guests.
-    #   # To fix these, manually change ownership of affected files in /var/lib/libvirt/qemu to qemu-libvirtd.
-    #   qemu.runAsRoot = true;
-    # };
+    libvirtd = {
+      enable = true;
+      # hanging this option to false may cause file permission issues for existing guests.
+      # To fix these, manually change ownership of affected files in /var/lib/libvirt/qemu to qemu-libvirtd.
+      qemu.runAsRoot = true;
+    };
 
     # lxd.enable = true;
+    spiceUSBRedirection.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
