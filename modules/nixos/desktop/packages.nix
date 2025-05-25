@@ -12,5 +12,7 @@
     cherry-studio
     qqmusic
     go-musicfox
+    coze
+    uv
   ];
 }

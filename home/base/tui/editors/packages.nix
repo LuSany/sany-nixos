@@ -68,7 +68,7 @@
 
       #-- python
       pyright # python language server
-      (python311.withPackages (
+      (python313.withPackages (
         ps:
           with ps; [
             ruff
@@ -84,7 +84,7 @@
             pyquery
             pyyaml
             boto3
-            uv
+            pymysql
           ]
       ))
 
