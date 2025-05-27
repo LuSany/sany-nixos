@@ -1,0 +1,3 @@
+[submodule "home/base/tui/editors/neovim/nvimdots"]
+	path = home/base/tui/editors/neovim/nvimdots
+	url = ./home/base/tui/editors/neovim/nvimdots
