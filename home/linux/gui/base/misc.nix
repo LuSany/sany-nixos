@@ -32,6 +32,10 @@
     # pkgs.nixpaks.wechat-uos-desktop-item
 
     wemeet
+    # pkgs.nixpaks.wemeet
+    # pkgs.nixpaks.wemeet-desktop-item
+
+    marktext
   ];
 
   # GitHub CLI tool
