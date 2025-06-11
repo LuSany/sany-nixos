@@ -17,7 +17,7 @@
   # boot.extraModprobeConfig = "options kvm_amd nested=1";  # for amd cpu
   #
   ## For Intel CPU, add "kvm-intel" to kernelModules.
-  boot.kernelModules = ["kvm-intel" "vfio-pci"];
+  boot.kernelModules = ["kvm-intel" "vfio-pci" "drm"];
   boot.extraModprobeConfig = "options kvm_intel nested=1"; # for intel cpu
 
   virtualisation = {

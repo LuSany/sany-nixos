@@ -25,6 +25,7 @@ in {
         "QT_QPA_PLATFORM,wayland"
         "SDL_VIDEODRIVER,wayland"
         "GDK_BACKEND,wayland"
+        "LIBSEAT_BACKEND,logind"
       ];
     };
     extraConfig = builtins.readFile ../conf/hyprland.conf;
